@@ -10,6 +10,10 @@
 
         <link rel="stylesheet" href="css/styles.css?v=1.0">
         <style>
+            @font-face {
+                font-family: 'partyline'; /*a name to be used later*/
+                src: url('./partyline.ttf'); /*URL to font*/
+            }
             * {
                 padding: 0;
                 margin: 0;
@@ -22,9 +26,9 @@
             li {
                 list-style-type: none;
                 font-family: sans-serif;
-                height: 40px;
+                height: 35px;
                 font-style: normal;
-                font-size: 20px;
+                font-size: 14px;
             }
             li a {
                 color: #FFFFFF;
@@ -43,14 +47,32 @@
                 width: 100%;
                 height: 100%;
             }
+            #title-lists {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 20px;
+                font-family: 'partyline';
+            }
             .list-container {
                 margin: auto;
-                margin-top: 20%;
+                margin-top: 40px;
                 text-align: center;
                 padding: 20px;
                 background: #0008;
-                width: 50%;
+                width: 100%;
                 border-radius: 2px;
+            }
+            @media only screen and (min-width: 700px) {
+                .list-container {
+                    width: 50%;
+                }
+                li {
+                    font-size: 20px;
+                        height: 55px;
+                }
+                #title-lists {
+                    font-size: 40px;
+                }
             }
             .links-container {
                 position: absolute;
@@ -66,17 +88,30 @@
         <div class="content-container">
             <img id="img-background" src="./background.jpg"/>
             <div class="links-container">
+                <p id="title-lists">Llistes Saldes</p>
                 <div class="list-container">
                     <ul class="list-links">
                         <li class="link-item">
-                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/63sLwmcsNhCdEgftF1Xz1q">
-                                <p class="link-title">PSYCH</p>
+                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/77tQuFh8PwMwW0BmNsd3jj">
+                                <p class="link-title">PACHANGA, FIESTA</p>
                             </a>
                         </li>
 
                         <li class="link-item">
-                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/77tQuFh8PwMwW0BmNsd3jj">
-                                <p class="link-title">PACHANGA, FIESTA</p>
+                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/5NKqyVVTjHyLA3zNjXwSbH">
+                                <p class="link-title">DANCE, ELECTRONICA</p>
+                            </a>
+                        </li>
+
+                        <li class="link-item">
+                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/3BQpmrd5P7SkKpwt5sNHR6">
+                                <p class="link-title">POPPY & 80s</p>
+                            </a>
+                        </li>
+
+                        <li class="link-item">
+                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/63sLwmcsNhCdEgftF1Xz1q">
+                                <p class="link-title">PSYCH</p>
                             </a>
                         </li>
 
@@ -94,21 +129,10 @@
 
                         <li class="link-item">
                             <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/1AUbEXwoVoMEVwAHfvwmE5">
-                                <p class="link-title">KRAUT AMBIENT (espiritual)</p>
+                                <p class="link-title">KRAUT AMBIENT </p>
                             </a>
                         </li>
 
-                        <li class="link-item">
-                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/3BQpmrd5P7SkKpwt5sNHR6">
-                                <p class="link-title">POPPY & 80s</p>
-                            </a>
-                        </li>
-
-                        <li class="link-item">
-                            <a class="link-link" target="_blank" href="https://open.spotify.com/user/ribas_oasis/playlist/5NKqyVVTjHyLA3zNjXwSbH">
-                                <p class="link-title">DANCE, ELECTRONICA</p>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
